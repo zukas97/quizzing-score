@@ -1,0 +1,58 @@
+[gd_scene load_steps=2 format=3 uid="uid://o5ccj6kf3yxm"]
+
+[ext_resource type="Script" uid="uid://crdoxj4lmp8jx" path="res://ctrl_window.gd" id="1_6x1k2"]
+
+[node name="Window" type="Window"]
+oversampling_override = 1.0
+position = Vector2i(0, 36)
+size = Vector2i(1280, 720)
+script = ExtResource("1_6x1k2")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="left" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="name_left" type="LineEdit" parent="CanvasLayer/left"]
+layout_mode = 0
+offset_top = 37.0
+offset_right = 640.0
+offset_bottom = 74.0
+placeholder_text = "Team 1"
+
+[node name="add_10_left" type="Button" parent="CanvasLayer/left"]
+layout_mode = 0
+offset_top = 350.0
+offset_right = 640.0
+offset_bottom = 381.0
+size_flags_vertical = 6
+text = "add 10"
+
+[node name="right" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="name_right" type="LineEdit" parent="CanvasLayer/right"]
+layout_mode = 0
+offset_left = 640.0
+offset_top = 37.0
+offset_right = 1280.0
+offset_bottom = 74.0
+placeholder_text = "Team 2"
+
+[node name="add_10_right" type="Button" parent="CanvasLayer/right"]
+layout_mode = 0
+offset_left = 700.0
+offset_top = 300.0
+offset_right = 900.0
+offset_bottom = 350.0
+text = "add 10"
+
+[connection signal="text_submitted" from="CanvasLayer/left/name_left" to="." method="_on_name_left_text_submitted"]
+[connection signal="pressed" from="CanvasLayer/left/add_10_left" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/right/add_10_right" to="." method="_on_add_10_right_pressed"]
