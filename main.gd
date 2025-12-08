@@ -14,7 +14,8 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	pass
+	$CanvasLayer/bottom_left/score.set_text(str(left_score))
+	$CanvasLayer/bottom_right/score.set_text(str(right_score))
 
 
 func _on_window_button(button: int) -> void:
@@ -22,11 +23,9 @@ func _on_window_button(button: int) -> void:
 		#left score
 		0:
 			left_score += 10
-			$CanvasLayer/bottom_left/score.set_text(str(left_score))
 		#right score
 		1:
 			right_score += 10
-			$CanvasLayer/bottom_right/score.set_text(str(right_score))
 		
 
 
@@ -35,3 +34,9 @@ func _on_window_left_name_set(name: String) -> void:
 
 func _on_window_right_name_set(name: String) -> void:
 	$CanvasLayer/right_name.set_text(name)
+
+func _on_window_left_score_set(score: int) -> void:
+	left_score = score
+
+func _on_window_right_score_set(score: int) -> void:
+	right_score = score

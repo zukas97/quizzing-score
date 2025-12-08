@@ -10,21 +10,15 @@ script = ExtResource("1_6x1k2")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
-[node name="left" type="Control" parent="CanvasLayer"]
-layout_mode = 3
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+[node name="left" type="Node2D" parent="CanvasLayer"]
 
 [node name="name_left" type="LineEdit" parent="CanvasLayer/left"]
-layout_mode = 0
 offset_top = 37.0
 offset_right = 640.0
 offset_bottom = 74.0
 placeholder_text = "Team 1"
 
 [node name="add_10_left" type="Button" parent="CanvasLayer/left"]
-layout_mode = 0
 offset_left = 220.0
 offset_top = 300.0
 offset_right = 420.0
@@ -32,14 +26,17 @@ offset_bottom = 350.0
 size_flags_vertical = 6
 text = "add 10"
 
-[node name="right" type="Control" parent="CanvasLayer"]
-layout_mode = 3
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+[node name="set_score_left" type="LineEdit" parent="CanvasLayer/left"]
+offset_left = 270.0
+offset_top = 400.0
+offset_right = 370.0
+offset_bottom = 440.0
+placeholder_text = "set score"
+alignment = 1
+
+[node name="right" type="Node2D" parent="CanvasLayer"]
 
 [node name="name_right" type="LineEdit" parent="CanvasLayer/right"]
-layout_mode = 0
 offset_left = 640.0
 offset_top = 37.0
 offset_right = 1280.0
@@ -47,13 +44,22 @@ offset_bottom = 74.0
 placeholder_text = "Team 2"
 
 [node name="add_10_right" type="Button" parent="CanvasLayer/right"]
-layout_mode = 0
 offset_left = 860.0
 offset_top = 300.0
 offset_right = 1060.0
 offset_bottom = 350.0
 text = "add 10"
 
+[node name="set_score_right" type="LineEdit" parent="CanvasLayer/right"]
+offset_left = 910.0
+offset_top = 400.0
+offset_right = 1010.0
+offset_bottom = 440.0
+placeholder_text = "set score"
+alignment = 1
+
 [connection signal="text_submitted" from="CanvasLayer/left/name_left" to="." method="_on_name_left_text_submitted"]
 [connection signal="pressed" from="CanvasLayer/left/add_10_left" to="." method="_on_button_pressed"]
+[connection signal="text_submitted" from="CanvasLayer/left/set_score_left" to="." method="_on_set_score_left_text_submitted"]
 [connection signal="pressed" from="CanvasLayer/right/add_10_right" to="." method="_on_add_10_right_pressed"]
+[connection signal="text_submitted" from="CanvasLayer/right/set_score_right" to="." method="_on_set_score_right_text_submitted"]

@@ -83,4 +83,6 @@ visible = false
 
 [connection signal="button" from="Window" to="." method="_on_window_button"]
 [connection signal="left_name_set" from="Window" to="." method="_on_window_left_name_set"]
+[connection signal="left_score_set" from="Window" to="." method="_on_window_left_score_set"]
 [connection signal="right_name_set" from="Window" to="." method="_on_window_right_name_set"]
+[connection signal="right_score_set" from="Window" to="." method="_on_window_right_score_set"]
