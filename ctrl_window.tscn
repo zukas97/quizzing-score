@@ -25,9 +25,10 @@ placeholder_text = "Team 1"
 
 [node name="add_10_left" type="Button" parent="CanvasLayer/left"]
 layout_mode = 0
-offset_top = 350.0
-offset_right = 640.0
-offset_bottom = 381.0
+offset_left = 220.0
+offset_top = 300.0
+offset_right = 420.0
+offset_bottom = 350.0
 size_flags_vertical = 6
 text = "add 10"
 
@@ -47,9 +48,9 @@ placeholder_text = "Team 2"
 
 [node name="add_10_right" type="Button" parent="CanvasLayer/right"]
 layout_mode = 0
-offset_left = 700.0
+offset_left = 860.0
 offset_top = 300.0
-offset_right = 900.0
+offset_right = 1060.0
 offset_bottom = 350.0
 text = "add 10"
 
