@@ -81,6 +81,8 @@ vertical_alignment = 1
 [node name="Window" parent="." instance=ExtResource("2_0xm2m")]
 visible = false
 
+[node name="MeshInstance2D" type="MeshInstance2D" parent="."]
+
 [connection signal="button" from="Window" to="." method="_on_window_button"]
 [connection signal="left_name_set" from="Window" to="." method="_on_window_left_name_set"]
 [connection signal="left_score_set" from="Window" to="." method="_on_window_left_score_set"]

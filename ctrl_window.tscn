@@ -17,6 +17,7 @@ offset_top = 37.0
 offset_right = 640.0
 offset_bottom = 74.0
 placeholder_text = "Team 1"
+alignment = 1
 
 [node name="add_10_left" type="Button" parent="CanvasLayer/left"]
 offset_left = 220.0
@@ -42,6 +43,7 @@ offset_top = 37.0
 offset_right = 1280.0
 offset_bottom = 74.0
 placeholder_text = "Team 2"
+alignment = 1
 
 [node name="add_10_right" type="Button" parent="CanvasLayer/right"]
 offset_left = 860.0
