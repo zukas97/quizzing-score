@@ -25,3 +25,7 @@ window/stretch/mode="canvas_items"
 [dotnet]
 
 project/assembly_name="quizzing"
+
+[rendering]
+
+textures/vram_compression/import_etc2_astc=true

@@ -26,6 +26,10 @@ func _on_button_pressed() -> void:
 
 func _on_name_left_text_submitted(new_text: String) -> void:
 	left_name_set.emit($CanvasLayer/left/name_left.text)
+	
+func _on_name_right_text_submitted(new_text: String) -> void:
+	right_name_set.emit($CanvasLayer/right/name_right.text);
+	pass # Replace with function body.
 
 func _on_add_10_right_pressed() -> void:
 	button.emit(1)
@@ -56,3 +60,5 @@ func _on_right_err_text_submitted(new_text: String) -> void:
 func _on_left_err_text_submitted(new_text: String) -> void:
 	left_err_set.emit(int($CanvasLayer/left/left_err.text))
 	pass # Replace with function body.
+
+

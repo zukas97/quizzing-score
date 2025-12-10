@@ -95,6 +95,7 @@ alignment = 1
 [connection signal="text_submitted" from="CanvasLayer/left/set_score_left" to="." method="_on_set_score_left_text_submitted"]
 [connection signal="pressed" from="CanvasLayer/left/add_error_left" to="." method="_on_add_error_left_pressed"]
 [connection signal="text_submitted" from="CanvasLayer/left/left_err" to="." method="_on_left_err_text_submitted"]
+[connection signal="text_submitted" from="CanvasLayer/right/name_right" to="." method="_on_name_right_text_submitted"]
 [connection signal="pressed" from="CanvasLayer/right/add_10_right" to="." method="_on_add_10_right_pressed"]
 [connection signal="text_submitted" from="CanvasLayer/right/set_score_right" to="." method="_on_set_score_right_text_submitted"]
 [connection signal="pressed" from="CanvasLayer/right/add_error_right" to="." method="_on_add_error_right_pressed"]
