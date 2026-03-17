@@ -7,6 +7,7 @@ signal left_score_set(score: int)
 signal right_score_set(score: int)
 signal left_err_set(errors: int)
 signal right_err_set(errors: int)
+signal clear
 
 
 # Called when the node enters the scene tree for the first time.
@@ -50,8 +51,8 @@ func _on_add_error_right_pressed() -> void:
 	button.emit(3)
 	pass # Replace with function body.
 
-
-
+func _on_clear_pressed() -> void:
+	clear.emit()
 
 func _on_right_err_text_submitted(new_text: String) -> void:
 	right_err_set.emit(int($CanvasLayer/right/right_err.text))

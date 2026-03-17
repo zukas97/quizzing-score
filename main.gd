@@ -69,3 +69,10 @@ func _on_window_right_err_set(errors: int) -> void:
 func _on_window_left_err_set(errors: int) -> void:
 	left_err = errors
 	pass # Replace with function body.
+
+
+func _on_window_clear() -> void:
+	right_score = 0
+	right_err = 0
+	left_score = 0
+	left_err = 0
