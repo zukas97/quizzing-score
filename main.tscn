@@ -25,6 +25,19 @@ border_width_right = 2
 border_width_bottom = 2
 border_color = Color(1, 1, 1, 1)
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1bvp3"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 2
+border_width_top = 2
+
+[sub_resource type="LabelSettings" id="LabelSettings_lquwl"]
+font_size = 24
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7mycd"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_top = 2
+border_width_right = 2
+
 [node name="main" type="Node2D" unique_id=2085586319]
 script = ExtResource("1_ig7tw")
 
@@ -113,6 +126,28 @@ label_settings = SubResource("LabelSettings_1bvp3")
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[node name="timeouts_left" type="Label" parent="CanvasLayer" unique_id=1079872899]
+offset_left = 560.0
+offset_top = 640.0
+offset_right = 640.0
+offset_bottom = 720.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_1bvp3")
+text = "3"
+label_settings = SubResource("LabelSettings_lquwl")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="timeouts_right" type="Label" parent="CanvasLayer" unique_id=228499561]
+offset_left = 640.0
+offset_top = 640.0
+offset_right = 720.0
+offset_bottom = 720.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_7mycd")
+text = "3"
+label_settings = SubResource("LabelSettings_lquwl")
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [node name="Window" parent="." unique_id=1215449383 instance=ExtResource("2_0xm2m")]
 visible = false
 
@@ -121,6 +156,8 @@ visible = false
 [connection signal="left_err_set" from="Window" to="." method="_on_window_left_err_set"]
 [connection signal="left_name_set" from="Window" to="." method="_on_window_left_name_set"]
 [connection signal="left_score_set" from="Window" to="." method="_on_window_left_score_set"]
+[connection signal="left_timeouts_set" from="Window" to="." method="_on_window_left_timeouts_set"]
 [connection signal="right_err_set" from="Window" to="." method="_on_window_right_err_set"]
 [connection signal="right_name_set" from="Window" to="." method="_on_window_right_name_set"]
 [connection signal="right_score_set" from="Window" to="." method="_on_window_right_score_set"]
+[connection signal="right_timeouts_set" from="Window" to="." method="_on_window_right_timeouts_set"]

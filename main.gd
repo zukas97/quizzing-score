@@ -45,6 +45,12 @@ func _on_window_button(button: int) -> void:
 			right_err += 1
 			if right_err >= 5:
 				right_score -=5
+		# left add 5
+		4:
+			left_score += 5
+		# right add 5
+		5:
+			right_score += 5
 		
 
 
@@ -76,3 +82,13 @@ func _on_window_clear() -> void:
 	right_err = 0
 	left_score = 0
 	left_err = 0
+
+
+
+func _on_window_right_timeouts_set(timeouts: int) -> void:
+	$CanvasLayer/timeouts_right.set_text(str(timeouts)) 
+	pass # Replace with function body.
+
+func _on_window_left_timeouts_set(timeouts: int) -> void:
+	$CanvasLayer/timeouts_left.set_text(str(timeouts)) 
+	pass # Replace with function body.

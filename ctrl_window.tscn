@@ -20,34 +20,60 @@ placeholder_text = "Team 1"
 alignment = 1
 
 [node name="add_10_left" type="Button" parent="CanvasLayer/left" unique_id=436539405]
-offset_left = 220.0
-offset_top = 300.0
-offset_right = 420.0
-offset_bottom = 350.0
+offset_left = 120.0
+offset_top = 115.0
+offset_right = 320.0
+offset_bottom = 165.0
 size_flags_vertical = 6
 text = "add 10"
 
+[node name="add_5_left" type="Button" parent="CanvasLayer/left" unique_id=1105524659]
+offset_left = 320.0
+offset_top = 115.0
+offset_right = 520.0
+offset_bottom = 165.0
+size_flags_vertical = 6
+text = "add 5"
+
 [node name="set_score_left" type="LineEdit" parent="CanvasLayer/left" unique_id=1348264117]
-offset_left = 270.0
-offset_top = 400.0
-offset_right = 370.0
-offset_bottom = 440.0
+offset_left = 269.0
+offset_top = 215.0
+offset_right = 369.0
+offset_bottom = 255.0
 placeholder_text = "set score"
 alignment = 1
 
 [node name="add_error_left" type="Button" parent="CanvasLayer/left" unique_id=55869195]
-offset_left = 220.0
-offset_top = 500.0
-offset_right = 420.0
-offset_bottom = 550.0
+offset_left = 219.0
+offset_top = 315.0
+offset_right = 419.0
+offset_bottom = 365.0
 text = "add error"
 
 [node name="left_err" type="LineEdit" parent="CanvasLayer/left" unique_id=202304024]
-offset_left = 270.0
-offset_top = 600.0
-offset_right = 370.0
-offset_bottom = 640.0
+offset_left = 269.0
+offset_top = 415.0
+offset_right = 369.0
+offset_bottom = 455.0
 placeholder_text = "set_err"
+alignment = 1
+
+[node name="timeout_label_left" type="Label" parent="CanvasLayer/left" unique_id=106923566]
+offset_left = 220.0
+offset_top = 485.0
+offset_right = 420.0
+offset_bottom = 515.0
+text = "Timeouts"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="timeouts_left" type="LineEdit" parent="CanvasLayer/left" unique_id=1617531499]
+offset_left = 220.0
+offset_top = 515.0
+offset_right = 420.0
+offset_bottom = 565.0
+text = "3"
+placeholder_text = "Timeouts"
 alignment = 1
 
 [node name="right" type="Node2D" parent="CanvasLayer" unique_id=403153414]
@@ -61,34 +87,61 @@ placeholder_text = "Team 2"
 alignment = 1
 
 [node name="add_10_right" type="Button" parent="CanvasLayer/right" unique_id=240317740]
-offset_left = 860.0
-offset_top = 300.0
-offset_right = 1060.0
-offset_bottom = 350.0
+offset_left = 760.0
+offset_top = 115.0
+offset_right = 960.0
+offset_bottom = 165.0
 text = "add 10"
 
+[node name="add_5_right" type="Button" parent="CanvasLayer/right" unique_id=201302856]
+offset_left = 960.0
+offset_top = 115.0
+offset_right = 1160.0
+offset_bottom = 165.0
+size_flags_vertical = 6
+text = "add 5"
+
 [node name="set_score_right" type="LineEdit" parent="CanvasLayer/right" unique_id=1360629533]
-offset_left = 910.0
-offset_top = 400.0
-offset_right = 1010.0
-offset_bottom = 440.0
+offset_left = 909.0
+offset_top = 215.0
+offset_right = 1009.0
+offset_bottom = 255.0
 placeholder_text = "set score"
 alignment = 1
 
 [node name="add_error_right" type="Button" parent="CanvasLayer/right" unique_id=1152310958]
-offset_left = 860.0
-offset_top = 500.0
-offset_right = 1060.0
-offset_bottom = 550.0
+offset_left = 859.0
+offset_top = 315.0
+offset_right = 1059.0
+offset_bottom = 365.0
 text = "add error"
 
 [node name="right_err" type="LineEdit" parent="CanvasLayer/right" unique_id=1718524265]
-offset_left = 910.0
-offset_top = 600.0
-offset_right = 1010.0
-offset_bottom = 640.0
+offset_left = 909.0
+offset_top = 415.0
+offset_right = 1009.0
+offset_bottom = 455.0
 placeholder_text = "set_err"
 alignment = 1
+
+[node name="timeout_label_right" type="Label" parent="CanvasLayer/right" unique_id=938242073]
+offset_left = 860.0
+offset_top = 485.0
+offset_right = 1060.0
+offset_bottom = 515.0
+text = "Timeouts"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="timeouts_right" type="LineEdit" parent="CanvasLayer/right" unique_id=2007997194]
+offset_left = 860.0
+offset_top = 515.0
+offset_right = 1060.0
+offset_bottom = 565.0
+text = "3"
+placeholder_text = "Timeouts"
+alignment = 1
+emoji_menu_enabled = false
 
 [node name="Clear" type="Button" parent="CanvasLayer" unique_id=409371058]
 custom_minimum_size = Vector2(200, 40)
@@ -100,12 +153,16 @@ text = "Clear"
 
 [connection signal="text_submitted" from="CanvasLayer/left/name_left" to="." method="_on_name_left_text_submitted"]
 [connection signal="pressed" from="CanvasLayer/left/add_10_left" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/left/add_5_left" to="." method="_on_add_5_left_pressed"]
 [connection signal="text_submitted" from="CanvasLayer/left/set_score_left" to="." method="_on_set_score_left_text_submitted"]
 [connection signal="pressed" from="CanvasLayer/left/add_error_left" to="." method="_on_add_error_left_pressed"]
 [connection signal="text_submitted" from="CanvasLayer/left/left_err" to="." method="_on_left_err_text_submitted"]
+[connection signal="text_submitted" from="CanvasLayer/left/timeouts_left" to="." method="_on_timeouts_left_text_submitted"]
 [connection signal="text_submitted" from="CanvasLayer/right/name_right" to="." method="_on_name_right_text_submitted"]
 [connection signal="pressed" from="CanvasLayer/right/add_10_right" to="." method="_on_add_10_right_pressed"]
+[connection signal="pressed" from="CanvasLayer/right/add_5_right" to="." method="_on_add_5_right_pressed"]
 [connection signal="text_submitted" from="CanvasLayer/right/set_score_right" to="." method="_on_set_score_right_text_submitted"]
 [connection signal="pressed" from="CanvasLayer/right/add_error_right" to="." method="_on_add_error_right_pressed"]
 [connection signal="text_submitted" from="CanvasLayer/right/right_err" to="." method="_on_right_err_text_submitted"]
+[connection signal="text_submitted" from="CanvasLayer/right/timeouts_right" to="." method="_on_timeouts_right_text_submitted"]
 [connection signal="pressed" from="CanvasLayer/Clear" to="." method="_on_clear_pressed"]
