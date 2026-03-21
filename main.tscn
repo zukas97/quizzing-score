@@ -17,7 +17,7 @@ border_width_bottom = 2
 border_color = Color(1, 1, 1, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_1bvp3"]
-font_size = 24
+font_size = 48
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lquwl"]
 bg_color = Color(0.6, 0.6, 0.6, 0)
@@ -31,12 +31,15 @@ border_width_left = 2
 border_width_top = 2
 
 [sub_resource type="LabelSettings" id="LabelSettings_lquwl"]
-font_size = 24
+font_size = 48
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7mycd"]
 bg_color = Color(0.6, 0.6, 0.6, 0)
 border_width_top = 2
 border_width_right = 2
+
+[sub_resource type="LabelSettings" id="LabelSettings_h2yge"]
+font_size = 32
 
 [node name="main" type="Node2D" unique_id=2085586319]
 script = ExtResource("1_ig7tw")
@@ -61,7 +64,7 @@ offset_bottom = 720.0
 [node name="score" type="Label" parent="CanvasLayer/bottom_left" unique_id=1422188612]
 layout_mode = 2
 size_flags_horizontal = 3
-theme_override_font_sizes/font_size = 128
+theme_override_font_sizes/font_size = 200
 text = "0"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -75,7 +78,7 @@ offset_bottom = 720.0
 [node name="score" type="Label" parent="CanvasLayer/bottom_right" unique_id=994916481]
 layout_mode = 2
 size_flags_horizontal = 3
-theme_override_font_sizes/font_size = 128
+theme_override_font_sizes/font_size = 200
 text = "0"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -147,6 +150,26 @@ text = "3"
 label_settings = SubResource("LabelSettings_lquwl")
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="TOL_left" type="Label" parent="CanvasLayer" unique_id=1792670676]
+offset_left = 560.0
+offset_top = 590.0
+offset_right = 640.0
+offset_bottom = 640.0
+text = "TOL"
+label_settings = SubResource("LabelSettings_h2yge")
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="TOL_right" type="Label" parent="CanvasLayer" unique_id=383133940]
+offset_left = 640.0
+offset_top = 590.0
+offset_right = 720.0
+offset_bottom = 640.0
+text = "TOL"
+label_settings = SubResource("LabelSettings_h2yge")
+horizontal_alignment = 1
+vertical_alignment = 2
 
 [node name="Window" parent="." unique_id=1215449383 instance=ExtResource("2_0xm2m")]
 visible = false
