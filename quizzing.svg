@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="32"
+   height="32"
+   viewBox="0 0 32 32"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.3 (0d15f75042, 2025-12-25)"
+   sodipodi:docname="quizzing.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#242424"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="false"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="px"
+     inkscape:zoom="26.494407"
+     inkscape:cx="18.871907"
+     inkscape:cy="17.720721"
+     inkscape:window-width="2528"
+     inkscape:window-height="1378"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg1"
+     showborder="false" />
+  <defs
+     id="defs1">
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect8"
+       is_visible="true"
+       lpeversion="1"
+       nodesatellites_param="F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1"
+       radius="0"
+       unit="px"
+       method="auto"
+       mode="F"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+    <linearGradient
+       id="swatch1"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#f9f9f9;stop-opacity:1;"
+         offset="0"
+         id="stop1" />
+    </linearGradient>
+  </defs>
+  <rect
+     style="fill:#1f1f1f;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3.27196;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+     id="rect8"
+     width="32"
+     height="32"
+     x="0"
+     y="0"
+     inkscape:label="background"
+     sodipodi:type="rect"
+     rx="3"
+     ry="3" />
+  <g
+     id="g4"
+     inkscape:label="buzzer"
+     transform="matrix(0.76268605,-0.76268605,0.76268605,0.76268605,-7.4762576,11.929695)">
+    <rect
+       style="fill:#f9f9f9;fill-opacity:0;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.94260338;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       id="rect1"
+       width="7.0579734"
+       height="22.059544"
+       x="12.471013"
+       y="8.4710131"
+       rx="0.44112334"
+       ry="0.50135326" />
+    <rect
+       style="fill:#f9f9f9;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.88089;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       id="rect2"
+       width="2"
+       height="1.5470742"
+       x="15"
+       y="6.8179841" />
+    <rect
+       style="fill:#f9f9f9;fill-opacity:0;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.671061;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       id="rect3"
+       width="5.3289385"
+       height="2.3289385"
+       x="13.33553"
+       y="4.5816593"
+       ry="0.35056224"
+       rx="0.44407824" />
+  </g>
+  <g
+     id="g8"
+     inkscape:label="board">
+    <rect
+       style="fill:#1f1f1f;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.870911;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       id="rect5"
+       width="18.129089"
+       height="13.799637"
+       x="3.4354556"
+       y="15.492282"
+       ry="0.51206326"
+       rx="0.51206326" />
+    <path
+       style="fill:#1f1f1f;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.863869;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       d="m 2.9626505,17.682982 c 18.5893065,0.01887 18.5893065,0.01887 18.5893065,0.01887 z"
+       id="path7" />
+    <path
+       style="fill:#1f1f1f;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.870162;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       d="M 12.429838,15.188443 V 29.490394 Z"
+       id="path8" />
+  </g>
+</svg>

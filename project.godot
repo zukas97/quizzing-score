@@ -19,7 +19,7 @@ run/main_scene="uid://b0jrfuwpesw8k"
 config/use_custom_user_dir=true
 config/features=PackedStringArray("4.6", "Forward Plus")
 run/low_processor_mode=true
-config/icon="res://icon.svg"
+config/icon="uid://1ethg8ncowmr"
 
 [display]
 
